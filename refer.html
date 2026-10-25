@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make a referral · Ethos Care</title>
+  <meta name="description" content="Enquire about a supported accommodation placement with Ethos Care in Southsea. Do not include a young person’s case details in this form.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="utility">
+      <div class="utility-inner">
+        <p>Open 24 hours, every day · Southsea, Portsmouth</p>
+        <p class="phones">
+          <a href="tel:+442393552871">023 9355 2871</a>
+          <a href="tel:+447581005131">07581 005131</a>
+        </p>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="bar-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">EC</span>
+          <span>
+            <strong>Ethos Care</strong>
+            <small>Supported homes</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="who-we-support.html">Who we support</a></li>
+            <li><a href="how-we-support.html">How we support</a></li>
+            <li><a href="homes.html">Homes</a></li>
+            <li><a href="referrers.html">For referrers</a></li>
+            <li><a href="young-people.html">Young people</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+          <a class="btn btn-small" href="refer.html">Make a referral</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head">
+      <p class="crumbs"><a href="index.html">Home</a> / Referral</p>
+      <p class="eyebrow">Enquiry</p>
+      <h1>Tell us who you are. Leave the young person’s story off this form.</h1>
+      <p>For an urgent placement, call <a href="tel:+442393552871">023 9355 2871</a> or <a href="tel:+447581005131">07581 005131</a>. Both numbers are open 24 hours a day. Email <a href="mailto:info@ethoscare.org.uk">info@ethoscare.org.uk</a>.</p>
+    </div>
+
+    <section class="section">
+      <div class="wrap split">
+        <form id="enquiry" class="form" action="mailto:info@ethoscare.org.uk" method="post" enctype="text/plain">
+          <div class="note">
+            <strong>This form opens an email. It is not a secure referral system.</strong>
+            <p>Do not include a young person’s name, date of birth, address, photographs or case history. We will reply with a safer way to send those papers if we may have a vacancy.</p>
+          </div>
+          <div class="form-grid stack">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="organisation">Organisation</label>
+              <input id="organisation" name="organisation" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="role">Your role</label>
+              <input id="role" name="role" autocomplete="organization-title" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field wide">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="audience">I am</label>
+              <select id="audience" name="audience" required>
+                <option value="">Choose one</option>
+                <option>From a local authority</option>
+                <option>From a charity or other organisation</option>
+                <option>A young person or family member</option>
+                <option>Someone else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="topic">This is about</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose one</option>
+                <option>A possible vacancy</option>
+                <option>Policies and registration documents</option>
+                <option>Arranging a visit</option>
+                <option>A question from a young person</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field wide">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Age range, placing area, and when you need a decision. No names."></textarea>
+              <span class="hint">Example: “16-year-old, Hampshire, needs a decision this week. Please call me.”</span>
+            </div>
+          </div>
+          <p class="field hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" tabindex="-1" autocomplete="off">
+          </p>
+          <label class="check">
+            <input id="consent" name="consent" type="checkbox" required>
+            <span>I will not put a young person’s identifying details or case history in this message.</span>
+          </label>
+          <p class="stack"><button class="btn" type="submit">Open this enquiry in my email</button></p>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+        <aside class="prose">
+          <h2>Office</h2>
+          <p>Ethos Care Ltd<br>28 Hudson Road<br>Southsea<br>Hampshire<br>PO5 1HD</p>
+          <p>This is the registered office. It is not published here as the address where young people live.</p>
+          <h2>Company</h2>
+          <p>Company number <a href="https://find-and-update.company-information.service.gov.uk/company/14814360">14814360</a>. Incorporated 19 April 2023. ICO registration C1492684.</p>
+          <p><a href="referrers.html">Read the referral steps</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <h2>Ethos Care Ltd</h2>
+          <p>Supported accommodation for young people aged 16 to 24, in two homes in Southsea, Portsmouth.</p>
+          <p>Registered office: 28 Hudson Road, Southsea, Hampshire, PO5 1HD. Home addresses are given to placing authorities and are not published here.</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="tel:+442393552871">023 9355 2871</a></li>
+            <li><a href="tel:+447581005131">07581 005131</a></li>
+            <li><a href="mailto:info@ethoscare.org.uk">info@ethoscare.org.uk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Important</h2>
+          <ul>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="refer.html">Referral enquiry</a></li>
+            <li><a href="team.html">Registered manager</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal">© 2026 Ethos Care Ltd. Company number 14814360. ICO registration C1492684. Service description checked against Ethos Care’s published pages and the Companies House record in October 2026. Confirm vacancies, fees and registration documents before a placement is made.</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
